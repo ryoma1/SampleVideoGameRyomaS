@@ -57,7 +57,7 @@ end
 
 -- INSERT LOCAL FUNCTION DEFINITION THAT GOES TO INSTRUCTIONS SCREEN 
 local function InstructionsScreenTransition( )
-    composer.gotoScene( "instructions_screen", {effect = "zoomInOutFade", time = 1000})
+    composer.gotoScene( "instructions", {effect = "zoomInOutFade", time = 1000})
 end  
 -----------------------------------------------------------------------------------------
 -- GLOBAL SCENE FUNCTIONS
@@ -96,7 +96,7 @@ function scene:create( event )
         {   
             -- Set its position on the screen relative to the screen size
             x = display.contentWidth/2,
-            y = display.contentHeight*7/8,
+            y = display.contentHeight*7/9,
 
             -- Insert the images here
             defaultFile = "Images/Start Button Unpressed.png",
@@ -113,7 +113,7 @@ function scene:create( event )
         {
             -- Set its position on the screen relative to the screen size
             x = display.contentWidth*7/8,
-            y = display.contentHeight*7/8,
+            y = display.contentHeight*7/14.5,
 
             -- Insert the images here
             defaultFile = "Images/Credits Button Unpressed.png",
@@ -129,8 +129,8 @@ function scene:create( event )
         instructionsButton = widget.newButton( 
         {
             -- Set its position on the screen relative to the screen size
-            x = display.contentWidth/6,
-            y = display.contentHeight*7/8,
+            x = display.contentWidth/8.4,
+            y = display.contentHeight*7/14.5,
 
             -- Insert the images here
             defaultFile = "Images/Instructions Button Unpressed.png",
